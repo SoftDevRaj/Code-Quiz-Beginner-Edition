@@ -1,0 +1,162 @@
+/* Apply box-sizing border-box to all elements */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Set styles for the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background: linear-gradient(0deg, rgba(19, 41, 61, 1) 0%, rgba(237, 245, 249, 1) 63%);
+  }
+  
+  /* Styles for the reset button */
+  .reset-button {
+    font-size: 18px;
+    height: 58px;
+  }
+  
+  /* Styles for the container of wins and losses */
+  .win-loss-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+
+  /* Styles for buttons */
+button {
+  background: radial-gradient(circle, yellow 0%, green 100%);
+  border-radius: 8px;
+  color: #13293d;
+  cursor: pointer;
+  font-size: 2em;
+  letter-spacing: 0.21px;
+  line-height: 1;
+  max-width: 255px;
+  padding: 20px 52px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  margin-top: 0.6em;
+}
+
+.checker {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+  
+  /* Styles for the header */
+  header {
+    padding: 40px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  /* Styles for the main container */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Styles for each section */
+  section {
+    flex: .4 1 auto;
+    padding: 30px 1%;
+    margin-top: 50px;
+    background-color: gainsboro;
+    border-radius: 8px;
+  }
+  
+  /* Styles for the questions container */
+  .questions {
+    padding: 2%;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  /* Styles for the answers container */
+  .answers {
+    background-color: #13293d;
+    color: white;
+    height: 80%;
+    width: auto;
+    padding-top: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin: -8px 26px;    
+  }
+
+  /* Styles for each answer option */
+  .answers label {
+     display: block;
+     margin: 10px 0; /* Add margin at the bottom to create space between answer options */
+    }
+  
+    .message {
+      position: fixed;
+      top: 517px;
+      right: 498px;
+      color: #9378e1;
+      font-size: 150px;
+    }
+  
+  /* Styles for the card container */
+  .card {
+    background: radial-gradient(circle, rgba(240, 230, 140, 1) 0%, rgba(187, 124, 33, 0.604079131652661) 100%);
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.2), 0 2px 4px rgba(60, 64, 67, 0.15);
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Styles for word blanks */
+  .word-blanks {
+    line-height: 1;
+  }
+  
+  /* Styles for large-font elements */
+  .large-font {
+    font-size: 3.5em;
+    text-align: center;
+  }
+  
+  /* Styles for the timer container */
+  .timer {
+    height: 240px;
+    padding: 10px;
+    background: #13293d;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Styles for the timer text */
+  .timer-text {
+    padding: 55px;
+  }
+  
+  /* Responsive styles for screens up to 1183px */
+  @media screen and (max-width: 1183px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .word-guess,
+    .results {
+      width: 90vw;
+    }
+  
+    section {
+      background-color: white;
+      margin: 20px auto;
+      width: 92vw;
+    }
+  }

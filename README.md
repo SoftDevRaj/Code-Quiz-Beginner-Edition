@@ -22,6 +22,8 @@ WHEN the game is over
 THEN I can save my initials and my score
 
 
-Mock-Up
+Mock-Up:
+
+![Alt text](image.png)
 
 
